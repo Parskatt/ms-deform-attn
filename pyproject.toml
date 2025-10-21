@@ -1,0 +1,25 @@
+[project]
+name = "MultiScaleDeformableAttention"
+version = "1.0.0"
+# url = "https://github.com/fundamentalvision/Deformable-DETR"
+description = "PyTorch Wrapper for CUDA Functions of Multi-Scale Deformable Attention"
+readme = { file = "README.md", content-type = "text/markdown" }
+license = { file = "LICENSE" }
+authors = [
+    { name = "Weijie Su", email = "weijiesu@gmail.com" },
+    { name = "Johan Edstedt", email = "johan.edstedt@liu.se" },
+]
+
+requires-python = ">=3.9"
+dependencies = [
+    "torch",
+    "numpy",
+]
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+    "numpy",
+]
+build-backend = "setuptools.build_meta"
+
