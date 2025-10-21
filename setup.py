@@ -72,7 +72,9 @@ def get_extensions():
         sources += source_cuda
         define_macros += [("WITH_CUDA", None)]
 
-    include_dirs = [extensions_dir]
+    # Convert to relative paths for setuptools
+    sources = [os.path.relpath(p, this_dir) for p in sources]
+    include_dirs = [os.path.relpath(extensions_dir, this_dir)]
     ext_modules = [
         extension(
             "MultiScaleDeformableAttention",
