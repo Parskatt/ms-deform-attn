@@ -1,6 +1,6 @@
 [project]
-name = "MultiScaleDeformableAttention"
-version = "1.0.0"
+name = "ms-deform-attn"
+version = "1.0.1"
 # url = "https://github.com/fundamentalvision/Deformable-DETR"
 description = "PyTorch Wrapper for CUDA Functions of Multi-Scale Deformable Attention"
 readme = { file = "README.md", content-type = "text/markdown" }
